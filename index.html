@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YouTube GIF Downloader – Save Comment GIFs, WebP to GIF, MP4 to GIF</title>
+<meta name="description" content="Free YouTube comment GIF downloader. Convert animated WebP to GIF, GIF to WebP, MP4 to GIF, APNG and WebM, all in your browser. No upload, no sign-up, no watermark.">
+<link rel="canonical" href="https://hamzayslmn.github.io/Youtube-Gif-Downloader/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YouTube GIF Downloader">
+<meta property="og:title" content="YouTube GIF Downloader – Save Comment GIFs as GIF">
+<meta property="og:description" content="YouTube comment GIFs download as .webp. Turn them into real GIFs, or convert GIF, WebP, APNG, MP4 and WebM, right in your browser.">
+<meta property="og:url" content="https://hamzayslmn.github.io/Youtube-Gif-Downloader/">
+<meta property="og:image" content="https://hamzayslmn.github.io/Youtube-Gif-Downloader/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "YouTube GIF Downloader",
+      "url": "https://hamzayslmn.github.io/Youtube-Gif-Downloader/",
+      "description": "Download YouTube comment GIFs and convert between GIF, animated WebP, APNG, MP4 and WebM in the browser.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires a modern browser with WebCodecs (Chrome, Edge, Firefox)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": ["YouTube comment GIF download", "WebP to GIF", "GIF to WebP", "MP4 to GIF", "GIF to MP4", "APNG export", "WebM export", "No upload, runs locally"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Why do YouTube comment GIFs download as WebP?", "acceptedAnswer": { "@type": "Answer", "text": "YouTube serves comment GIFs as animated WebP because it is smaller than GIF. Many apps don't accept WebP, so this tool converts it back to a real GIF." } },
+        { "@type": "Question", "name": "How do I download a GIF from a YouTube comment?", "acceptedAnswer": { "@type": "Answer", "text": "Right-click the GIF in the comment, choose Copy image address, paste it into YouTube GIF Downloader and press Convert, then Download." } },
+        { "@type": "Question", "name": "Are my files uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Conversion happens in your browser. Dropped files never leave your device. Pasted YouTube URLs are fetched through the wsrv.nl image proxy because YouTube blocks direct cross-site downloads." } },
+        { "@type": "Question", "name": "Which formats can I convert?", "acceptedAnswer": { "@type": "Answer", "text": "Input: GIF, animated WebP, APNG, PNG, JPEG, MP4, WebM and MOV. Output: GIF, animated WebP, APNG, MP4 (H.264) and WebM (VP9)." } }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+
+<nav class="top">
+  <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28"> YouTube GIF Downloader</a>
+  <div class="links">
+  <a class="sponsor" href="https://github.com/sponsors/HamzaYslmn" target="_blank" rel="noopener" aria-label="Sponsor this project on GitHub">
+    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 14.3s-5.8-3.4-6.6-7.2C.9 4.6 2.6 2.3 5 2.3c1.3 0 2.4.7 3 1.7.6-1 1.7-1.7 3-1.7 2.4 0 4.1 2.3 3.6 4.8C13.8 10.9 8 14.3 8 14.3"/></svg>
+    <span>Sponsor</span>
+  </a>
+  <a class="gh" href="https://github.com/HamzaYslmn/Youtube-Gif-Downloader" aria-label="Source code on GitHub">
+    <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+    <span>GitHub</span>
+  </a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Download YouTube comment GIFs <span>as real GIFs</span></h1>
+  <p>YouTube saves comment GIFs as animated <b>.webp</b>. Paste the link and get a GIF that works everywhere. You can also convert GIF, WebP, APNG, MP4 and WebM.</p>
+  <ul class="badges"><li>Free</li><li>No upload</li><li>No sign-up</li><li>No watermark</li></ul>
+</header>
+
+<main>
+  <div id="app"><noscript>This converter needs JavaScript.</noscript></div>
+
+  <section>
+    <h2>How to download a GIF from a YouTube comment</h2>
+    <ol class="steps">
+      <li><b>Copy the link</b><span>Right-click the GIF in the comment and choose <i>Copy image address</i>. It looks like <code>i.ytimg.com/c_exp/…_webp_animated….webp</code>.</span></li>
+      <li><b>Paste it here</b><span>Paste it into the box above and press <i>Convert</i>. On a phone, tap the clipboard button.</span></li>
+      <li><b>Download</b><span>You get a .gif that works in WhatsApp, Discord, Telegram, X and anywhere else.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Supported conversions</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>From</th><th>To</th></tr></thead>
+        <tbody>
+          <tr><td>Animated WebP (YouTube comment GIFs)</td><td>GIF, APNG, MP4, WebM</td></tr>
+          <tr><td>GIF</td><td>Animated WebP, APNG, MP4, WebM</td></tr>
+          <tr><td>MP4, WebM, MOV video</td><td>GIF, animated WebP, APNG</td></tr>
+          <tr><td>APNG</td><td>GIF, animated WebP, MP4, WebM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>Why do YouTube comment GIFs download as WebP?</summary><p>YouTube serves comment GIFs as animated WebP because it is smaller than GIF. Many apps don't accept WebP, so this tool converts it back to a real GIF.</p></details>
+      <details><summary>Are my files uploaded anywhere?</summary><p>No. Conversion happens in your browser. Dropped files never leave your device. Pasted YouTube URLs are fetched through the <a href="https://wsrv.nl">wsrv.nl</a> image proxy because YouTube blocks direct cross-site downloads.</p></details>
+      <details><summary>Which formats can I convert?</summary><p>Input: GIF, animated WebP, APNG, PNG, JPEG, MP4, WebM and MOV. Output: GIF, animated WebP, APNG, MP4 (H.264) and WebM (VP9).</p></details>
+      <details><summary>Which browsers work?</summary><p>Recent Chrome, Edge, Opera and Firefox, on phones, tablets and desktops. Safari doesn't support the image decoder yet.</p></details>
+      <details><summary>The GIF is too big. What can I do?</summary><p>GIF is an old format. Pick a smaller size, or convert to WebP or MP4, which are often 5 to 10 times smaller.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Free and open source on <a href="https://github.com/HamzaYslmn/Youtube-Gif-Downloader">GitHub</a>. If it saved you some hassle, consider <a href="https://github.com/sponsors/HamzaYslmn" target="_blank" rel="noopener">sponsoring ❤</a>.</p>
+  <p>Not affiliated with YouTube or Google. Only download content you have the right to use.</p>
+</footer>
+
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
